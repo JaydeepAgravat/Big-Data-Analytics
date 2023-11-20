@@ -67,4 +67,46 @@
     - Netflix
     - YouTube
     - OpenAI
-  </details>
+</details>
+
+<details>
+  <summary><a href="https://github.com/JaydeepAgravat/Big-Data-Analytics/blob/main/Hadoop.md">2. Hadoop</a></summary>
+  <br/>
+  
+  - History of Hadoop
+  - Basics of Hadoop
+  - Advantage & Disadvantage of Hadoop
+  - Why Hadoop Required?
+  - Hadoop Distributed File System
+    - HDFS Master-Slave Architecture
+    - HDFS Core Components
+    - Hadoop Cluster
+    - HDFS Write Architecture
+    - HDFS Write Pipeline
+    - Data Streaming & Replication
+    - Shutdown of Pipeline or Acknowledgement Stage
+  - Hadoop Ecosystem
+  - Hadoop Ecosystem Distribution
+    - Data Layer Components
+    - Supporting Components (Coordinate and Manage Data Processing)
+  - Map Reduce
+    - Developing a MapReduce Application
+    - MapReduce Architecture
+    - How MapReduce Works
+    - MapReduce Algorithm
+    - MapReduce Features
+    - Brief Anatomy of a Map Reduce Job run and Failures
+      - Anatomy of a MapReduce Job Run
+      - Failures in MapReduce Job Run
+      - Mitigation Strategies for Failures
+    - Map Reduce Types and Formats
+      - MapReduce Types
+      - MapReduce Formats
+  - Hadoop Environment
+  - Hadoop Configuration
+  - Security in Hadoop
+  - Administering Hadoop
+  - Monitoring-Maintenance
+  - Hadoop Benchmarks
+  - Hadoop in the Cloud
+</details>
