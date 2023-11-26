@@ -3,6 +3,7 @@
 <details>
   <summary><a href="https://github.com/JaydeepAgravat/Big-Data-Analytics/blob/main/Introduction%20to%20Big%20Data.md">1. Introduction to Big Data</a></summary>
   <br/>
+
   - Introduction
     - Data
     - Types of Data
