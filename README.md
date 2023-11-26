@@ -163,3 +163,28 @@
     4. NoSQL Database Types
   - SQL vs NoSQL  
 </details>
+
+<details>
+  <summary><a href="https://github.com/JaydeepAgravat/Big-Data-Analytics/blob/main/Mining%20Data%20Stream.md">4. Introduction to Big Data</a></summary>
+  <br/>
+
+  - Data Stream Mining
+  - Stream Data
+  - Stream Data Model
+  - Stream Data Architecture
+  - ETL
+  - Batch vs Steam Processing
+  - Stream Computing
+  - Sampling Data in a Stream
+  - Filtering Streams
+  - Counting Distinct Elements in a Stream
+  - Estimating Moments
+  - Counting Ones in a Window
+  - Decaying Window
+  - Real time Analytics Platform (RTAP) applications
+  - Case Study
+    - Real-Time Sentiment Analysis
+    - Stock Market Predictions
+  - Using Graph Analytics for Big Data: Graph Analytics
+</details>
+
