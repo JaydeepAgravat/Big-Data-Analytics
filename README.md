@@ -189,3 +189,43 @@
   - Using Graph Analytics for Big Data: Graph Analytics
 </details>
 
+<details>
+  <summary><a href="https://github.com/JaydeepAgravat/Big-Data-Analytics/blob/main/Frameworks.md">5. Frameworks</a></summary>
+  <br/>
+
+  - Hive
+    - Basics of Hive
+    - Hive services, HiveQL, Querying Data in Hive
+    - Hive Architecture & Components
+    - Partitioning and Bucketing in Hive
+    - Metadata and Metastore in Hive
+    - Types of Metastores in Hive
+  - Pig
+    - Basics of Pig
+    - Feature of Pig
+    - Applications of Pig
+    - Execution Types or Run Modes
+    - Ways to execute Pig program
+    - Pig Work Flow & Components
+    - Pig Architecture
+    - Pig Latin Data Model
+    - Pig vs MapReduce
+    - Pig vs SQL
+    - Pig vs Hive
+  - HBase
+    - Basics of HBase
+    - Storage Mechanism in HBase
+    - Features of HBase
+    - Use & Application of HBase
+    - HBase Architecture and Components
+    - Region Server & Region
+    - HBase Write & Read
+    - Zookeeper in HBase
+  - Zookeeper
+    - Basics of Zookeeper
+    - Service of Zookeeper
+    - Benefits of Zookeeper
+    - Zookeeper Architecture
+    - Zookeeper Data Model
+</details>
+
