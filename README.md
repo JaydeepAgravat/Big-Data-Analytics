@@ -166,7 +166,7 @@
 </details>
 
 <details>
-  <summary><a href="https://github.com/JaydeepAgravat/Big-Data-Analytics/blob/main/Mining%20Data%20Stream.md">4. Introduction to Big Data</a></summary>
+  <summary><a href="https://github.com/JaydeepAgravat/Big-Data-Analytics/blob/main/Mining%20Data%20Stream.md">4. Mining Data Stream</a></summary>
   <br/>
 
   - Data Stream Mining
