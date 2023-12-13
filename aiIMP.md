@@ -718,3 +718,978 @@ In unsupervised learning, the algorithm is given input data without explicit out
 - Unsupervised learning is applied when the goal is to explore or understand the inherent structure of the data without labeled examples.
 
 In practice, both supervised and unsupervised learning methods are essential components of machine learning, and the choice between them depends on the nature of the task and the availability of labeled data.
+
+## UNIT-8
+
+### 1. Explain morphological and syntax analysis phases of NLP. [4]
+
+Natural Language Processing (NLP) involves various stages of analysis to understand and process human language. Morphological analysis and syntax analysis are two fundamental phases in this process:
+
+Morphological Analysis
+
+**Definition:**
+Morphology deals with the internal structure of words and the rules governing the formation of words from basic morphemes. Morphological analysis in NLP involves breaking down words into their smallest meaningful units (morphemes) to understand their structure and derive their meaning.
+
+**Tasks in Morphological Analysis:**
+
+1. **Tokenization:**
+   - Breaking down a text into individual words, phrases, or symbols, known as tokens.
+
+2. **Stemming:**
+   - Reducing words to their base or root form by removing affixes. For example, "running" becomes "run."
+
+3. **Lemmatization:**
+   - Similar to stemming but involves reducing words to their base form (lemma) based on their grammatical meaning. For example, "better" becomes "good."
+
+4. **Part-of-Speech (POS) Tagging:**
+   - Assigning grammatical categories (e.g., noun, verb, adjective) to each word in a sentence.
+
+5. **Morpheme Analysis:**
+   - Identifying and analyzing the smallest units of meaning in a word.
+
+Syntax Analysis (or Syntactic Analysis)
+
+**Definition:**
+Syntax analysis focuses on the arrangement of words to form well-structured sentences in a language. It involves the analysis of the grammatical structure and relationships between words in a sentence.
+
+**Tasks in Syntax Analysis:**
+
+1. **Parsing:**
+   - Breaking down a sentence into its grammatical components to understand the syntactic structure. This involves creating a parse tree or syntactic tree.
+
+2. **Phrase Structure Parsing:**
+   - Identifying phrases (e.g., noun phrases, verb phrases) within a sentence and determining their hierarchical structure.
+
+3. **Dependency Parsing:**
+   - Analyzing the grammatical relationships between words by establishing dependencies between them. This is represented in a dependency tree.
+
+4. **Grammar Rules Application:**
+   - Applying grammar rules to ensure that the sentence conforms to the syntactic rules of the language.
+
+5. **Sentence Structure Analysis:**
+   - Analyzing the overall structure of a sentence, including the subject, predicate, and object.
+
+**Example:**
+Consider the sentence "The cat chased the mouse."
+
+- **Morphological Analysis:**
+  - Tokenization: ["The", "cat", "chased", "the", "mouse"]
+  - POS Tagging: [Determiner, Noun, Verb, Determiner, Noun]
+
+- **Syntax Analysis:**
+  - Parsing: (S (NP (Det The) (Noun cat)) (VP (Verb chased) (NP (Det the) (Noun mouse))))
+  - Dependency Parsing: Establishing dependencies between words.
+
+These analyses are crucial in NLP for tasks such as machine translation, sentiment analysis, information extraction, and question answering. They lay the groundwork for understanding the structure and meaning of natural language expressions.
+
+### 2. Write a note on Natural Language Processing. [7]
+
+Natural Language Processing (NLP) is a subfield of artificial intelligence (AI) that focuses on the interaction between computers and human languages. The ultimate goal of NLP is to enable machines to understand, interpret, and generate human-like language in a way that is both meaningful and contextually relevant. This multidisciplinary field draws upon linguistics, computer science, and cognitive psychology to bridge the gap between human communication and computational understanding.
+
+Key Components of Natural Language Processing:
+
+1. **Tokenization and Text Preprocessing:**
+   - The initial step in NLP involves breaking down text into smaller units, known as tokens. This includes segmenting sentences into words or identifying phrases. Text preprocessing tasks, such as stemming and lemmatization, are also performed to normalize the text and reduce words to their base forms.
+
+2. **Morphological Analysis:**
+   - Morphological analysis involves studying the internal structure of words, breaking them down into morphemes, and understanding the rules governing their formation. Tasks include tokenization, stemming, lemmatization, and part-of-speech tagging.
+
+3. **Syntax Analysis:**
+   - Syntax analysis focuses on the arrangement of words in a sentence to understand their grammatical structure. Parsing techniques are used to create syntactic trees, representing the hierarchical relationships between words and phrases.
+
+4. **Semantic Analysis:**
+   - Semantic analysis deals with the meaning of words and sentences. It aims to capture the intended meaning of a text by considering word sense disambiguation, named entity recognition, and semantic role labeling.
+
+5. **Pragmatic Analysis:**
+   - Pragmatic analysis takes into account the context and purpose of communication. It involves understanding the implied meaning, conversational implicatures, and other aspects related to the pragmatic use of language.
+
+6. **Discourse Analysis:**
+   - Discourse analysis looks at larger units of language, such as paragraphs or entire documents, to understand the flow and coherence of information. Coreference resolution and discourse structure analysis fall under this category.
+
+Applications of Natural Language Processing:
+
+1. **Machine Translation:**
+   - NLP plays a crucial role in machine translation systems, allowing for the automatic translation of text from one language to another. Systems like Google Translate utilize NLP techniques to achieve accurate translations.
+
+2. **Speech Recognition:**
+   - Speech recognition systems use NLP to convert spoken language into text. Virtual assistants like Siri and Google Assistant leverage NLP to understand and respond to spoken commands.
+
+3. **Sentiment Analysis:**
+   - NLP is employed in sentiment analysis to determine the sentiment expressed in a piece of text, such as positive, negative, or neutral. This is valuable for businesses monitoring customer feedback and social media sentiment.
+
+4. **Information Extraction:**
+   - NLP techniques are applied in information extraction tasks to identify and extract relevant information from unstructured text. This is useful in applications like news summarization and data mining.
+
+5. **Question Answering:**
+   - Question answering systems use NLP to comprehend user queries and extract relevant information from structured or unstructured data sources to provide accurate and contextually appropriate answers.
+
+6. **Chatbots and Virtual Assistants:**
+   - Chatbots and virtual assistants utilize NLP to understand and generate natural language responses in human-computer interactions. They assist users with queries, perform tasks, and engage in conversations.
+
+Challenges and Future Directions:
+
+1. **Ambiguity and Context Understanding:**
+   - NLP systems often struggle with ambiguity and understanding context. Resolving ambiguous terms and comprehending context-dependent meanings remain challenging tasks.
+
+2. **Common Sense Reasoning:**
+   - Developing NLP systems that possess common sense reasoning abilities comparable to human understanding is an ongoing challenge.
+
+3. **Multilingual Processing:**
+   - Enhancing the ability of NLP systems to process multiple languages with equal proficiency is crucial for global applications.
+
+4. **Ethical Considerations:**
+   - Addressing ethical concerns related to bias in language models, privacy issues, and the responsible use of NLP technologies is gaining prominence.
+
+5. **Deep Learning Advances:**
+   - Deep learning, particularly with the use of transformer models like BERT and GPT, has significantly advanced NLP capabilities, but further research is needed to understand and improve model interpretability, robustness, and efficiency.
+
+Conclusion:
+
+Natural Language Processing has witnessed significant advancements in recent years, revolutionizing the way machines interact with and understand human language. As researchers continue to explore innovative techniques, the field holds immense potential for shaping the future of human-computer communication, enabling more intuitive and intelligent interactions across various domains. Despite the challenges, the ongoing evolution of NLP promises breakthroughs that will continue to impact industries, improve user experiences, and contribute to the broader landscape of artificial intelligence.
+
+### 3. Enlist and describe different phases involved in Natural Language Processing. [3]
+
+Natural Language Processing (NLP) involves several distinct phases that collectively enable computers to understand, interpret, and generate human language. These phases are crucial for processing and extracting meaningful information from text or speech. Here are the key phases involved in NLP:
+
+1. **Text Acquisition:**
+   - **Definition:** The initial phase involves obtaining the raw text data from various sources such as documents, websites, or speech recordings.
+   - **Process:**
+      - **Data Collection:** Gathering text data from diverse sources.
+      - **Preprocessing:** Removing irrelevant information, noise, or unwanted characters.
+
+2. **Tokenization:**
+   - **Definition:** Tokenization involves breaking down a text into smaller units called tokens, which can be words, phrases, or symbols.
+   - **Process:**
+      - **Word Tokenization:** Breaking down sentences into individual words.
+      - **Sentence Tokenization:** Dividing text into sentences.
+
+3. **Morphological Analysis:**
+   - **Definition:** Morphological analysis focuses on understanding the internal structure of words and the rules governing their formation.
+   - **Tasks:**
+      - **Stemming:** Reducing words to their base or root form.
+      - **Lemmatization:** Reducing words to their base form based on their grammatical meaning.
+      - **Part-of-Speech (POS) Tagging:** Assigning grammatical categories (e.g., noun, verb) to words.
+
+4. **Syntax Analysis (Syntactic Analysis):**
+   - **Definition:** Syntax analysis involves analyzing the grammatical structure of sentences, determining the relationships between words, and creating a syntactic tree.
+   - **Tasks:**
+      - **Parsing:** Breaking down a sentence into its grammatical components.
+      - **Dependency Parsing:** Establishing grammatical relationships between words.
+      - **Phrase Structure Parsing:** Identifying and structuring phrases within a sentence.
+
+5. **Semantic Analysis:**
+   - **Definition:** Semantic analysis focuses on understanding the meaning of words and sentences.
+   - **Tasks:**
+      - **Named Entity Recognition (NER):** Identifying and classifying entities (e.g., names, locations) in text.
+      - **Word Sense Disambiguation:** Resolving the meaning of ambiguous words.
+      - **Semantic Role Labeling (SRL):** Identifying the roles of words in a sentence.
+
+6. **Pragmatic Analysis:**
+   - **Definition:** Pragmatic analysis considers the context, purpose, and implied meaning of language.
+   - **Tasks:**
+      - **Anaphora Resolution:** Resolving references to entities mentioned earlier in the text.
+      - **Conversational Implicatures:** Understanding implied meanings and context in conversation.
+
+7. **Discourse Analysis:**
+   - **Definition:** Discourse analysis involves studying larger units of language, such as paragraphs or documents, to understand the flow and coherence of information.
+   - **Tasks:**
+      - **Coreference Resolution:** Identifying when different expressions refer to the same entity.
+      - **Discourse Structure Analysis:** Understanding the organization and structure of text at a higher level.
+
+8. **Text Generation:**
+   - **Definition:** Text generation involves creating coherent and contextually relevant human-like text based on the learned patterns and structures.
+   - **Tasks:**
+      - **Language Modeling:** Generating text based on learned language patterns.
+      - **Content Creation:** Automatically generating articles, summaries, or responses.
+
+9. **Evaluation:**
+   - **Definition:** The final phase involves assessing the performance and accuracy of the NLP system.
+   - **Tasks:**
+      - **Quantitative Evaluation:** Using metrics like precision, recall, and F1-score.
+      - **Qualitative Evaluation:** Human evaluation to assess the system's output quality.
+
+Conclusion:
+
+The different phases of NLP work in concert to enable machines to understand, interpret, and generate human language. These phases cover a range of linguistic and computational tasks, from basic tokenization to sophisticated semantic and discourse analysis. The advancement of NLP techniques has significantly enhanced the ability of machines to process and understand natural language, leading to applications in machine translation, sentiment analysis, question answering, and many other areas.
+
+### 4. Briefly explain any one application of Natural Language Processing. [3]
+
+**Machine Translation:**
+
+**Definition:** Machine translation is the application of NLP that involves automatically translating text or speech from one language to another.
+
+**Process:**
+
+- **Tokenization:** Breaking down sentences into individual words or phrases.
+- **Morphological Analysis:** Understanding the internal structure of words.
+- **Syntax Analysis:** Analyzing the grammatical structure of sentences.
+- **Semantic Analysis:** Capturing the meaning of words and phrases.
+- **Text Generation:** Generating equivalent text in the target language.
+
+**Significance:**
+
+- Facilitates communication across language barriers.
+- Enables the translation of large volumes of text quickly and efficiently.
+- Used in platforms like Google Translate to provide on-the-fly language translation.
+
+**Sentiment Analysis:**
+
+**Definition:** Sentiment analysis, or opinion mining, is the application of NLP that involves determining the sentiment expressed in a piece of text, such as positive, negative, or neutral.
+
+**Process:**
+
+- **Tokenization:** Breaking down text into individual words or phrases.
+- **Part-of-Speech Tagging:** Assigning grammatical categories to words.
+- **Semantic Analysis:** Understanding the meaning and context of words.
+- **Machine Learning Classification:** Training models to classify text sentiment.
+
+**Significance:**
+
+- Valuable for businesses to gauge customer opinions and feedback.
+- Used in social media monitoring to understand public sentiment.
+- Aids in product reviews analysis and customer satisfaction assessment.
+
+These applications showcase the versatility and practical impact of Natural Language Processing in solving real-world challenges, from breaking down language barriers to extracting meaningful insights from textual data.
+
+## UNIT-7
+
+### 1. Explain the components of planning system. [4]
+
+A planning system in the context of artificial intelligence refers to a system designed to generate plans, sequences of actions or strategies, to achieve specific goals or objectives. Planning systems are used in various domains, including robotics, autonomous systems, and decision-making applications. The components of a planning system typically include:
+
+1. **Knowledge Base:**
+   - **Definition:** The knowledge base consists of information about the domain in which planning is taking place. It includes facts about the current state, possible actions, and their effects, as well as the goals to be achieved.
+   - **Role:** The knowledge base serves as the foundation for the planning process, providing the necessary information for generating plans.
+
+2. **Goal Specification:**
+   - **Definition:** Goal specification involves defining the objectives or desired outcomes that the planning system aims to achieve. Goals describe the state or conditions that the system should bring about.
+   - **Role:** Goal specification guides the planning process by defining the target states or situations that the system needs to reach.
+
+3. **State Space Representation:**
+   - **Definition:** The state space represents all possible states that the system can be in. It includes the initial state, intermediate states, and the goal states.
+   - **Role:** The state space provides a structured representation of the possible configurations of the system, and it helps the planning algorithm explore and navigate through potential states.
+
+4. **Action Representation:**
+   - **Definition:** Action representation involves specifying the available actions or operations that can be performed to transition from one state to another. Each action is associated with preconditions and effects.
+   - **Role:** Actions define the system's capabilities and the changes they bring about in the state. They are used by the planning algorithm to generate sequences of actions leading to goal states.
+
+5. **Planning Algorithm:**
+   - **Definition:** The planning algorithm is a computational procedure that searches through the state space to find a sequence of actions that transform the current state into a goal state.
+   - **Role:** The planning algorithm is the core component that determines how the planning problem is solved. It explores possible paths, evaluates their feasibility, and selects a plan that satisfies the goals.
+
+6. **Search Strategy:**
+   - **Definition:** The search strategy guides the exploration of the state space during the planning process. It dictates how the planning algorithm traverses the space of possible states and actions.
+   - **Role:** The search strategy influences the efficiency and effectiveness of the planning algorithm, impacting the time and resources required to find a suitable plan.
+
+7. **Plan Execution and Monitoring:**
+   - **Definition:** Once a plan is generated, the system needs to execute the sequence of actions in the real-world environment. Monitoring mechanisms may be employed to ensure that the plan is executed successfully.
+   - **Role:** Plan execution and monitoring bridge the gap between the abstract planning phase and the concrete actions taken in the physical or virtual world.
+
+8. **Learning and Adaptation (Optional):**
+   - **Definition:** Some planning systems may incorporate learning mechanisms to adapt to changes in the environment or to improve their performance over time.
+   - **Role:** Learning and adaptation enhance the system's ability to handle dynamic and uncertain conditions, allowing it to refine its planning strategies based on experience.
+
+These components work together to enable a planning system to analyze a given situation, formulate goals, and generate feasible plans to achieve those goals within a specified environment. The effectiveness of a planning system depends on the quality of its knowledge base, the expressiveness of its action representation, and the efficiency of its planning algorithm and search strategy.
+
+### 2. Discuss Goal Stack planning. [4]
+
+**Goal Stack Planning:**
+
+Goal Stack Planning is a planning paradigm used in artificial intelligence for generating plans to achieve goals. In this approach, the planning process is organized around a stack of goals. The system decomposes the high-level goals into subgoals and then generates plans to achieve these subgoals. The goals are added to the stack, and the planning process involves selecting and decomposing the top goal on the stack until a feasible plan is obtained.
+
+**Key Concepts:**
+
+1. **Goal Stack:**
+   - The stack contains goals that need to be achieved. The top goal is the current focus of planning.
+
+2. **Decomposition:**
+   - Decomposition involves breaking down complex goals into subgoals or actions. Each decomposition step contributes to solving the top goal on the stack.
+
+3. **Plan Formation:**
+   - Plans are formed by selecting actions or subgoals that contribute to achieving the current top goal on the stack. The process continues until the stack is empty, indicating that all high-level goals have been addressed.
+
+4. **Backtracking:**
+   - If a subgoal cannot be achieved, the system backtracks to a previous state in the plan and explores alternative paths. This allows for dynamic and flexible planning.
+
+**Example of Goal Stack Planning:**
+
+Consider a simple example of a robot tasked with making a sandwich. The high-level goal is to "Make a Sandwich." The goal stack planning process might look like this:
+
+1. **Top Goal: Make a Sandwich**
+   - Decompose into subgoals:
+      - Gather Ingredients
+      - Prepare Ingredients
+      - Assemble Sandwich
+
+2. **Top Goal: Gather Ingredients**
+   - Decompose into subgoals:
+      - Get Bread
+      - Get Cheese
+      - Get Lettuce
+      - Get Tomato
+
+3. **Top Goal: Get Bread**
+   - Execute action: Move to the Bread Shelf, Take Bread
+
+4. **Top Goal: Get Cheese**
+   - Execute action: Move to the Refrigerator, Take Cheese
+
+5. **Top Goal: Get Lettuce**
+   - Execute action: Move to the Vegetable Bin, Take Lettuce
+
+6. **Top Goal: Get Tomato**
+   - Execute action: Move to the Vegetable Bin, Take Tomato
+
+   - Now, the goals related to gathering ingredients have been achieved. The system can move on to the next high-level goal:
+
+7. **Top Goal: Prepare Ingredients**
+   - Decompose into subgoals:
+      - Slice Bread
+      - Slice Cheese
+      - Wash Lettuce
+      - Slice Tomato
+
+8. **Top Goal: Slice Bread**
+   - Execute action: Take Bread, Use Knife to Slice Bread
+
+... Continue this process until all subgoals are achieved, and the final high-level goal of making a sandwich is accomplished.
+
+Goal Stack Planning allows for a structured and hierarchical approach to planning, where complex goals are tackled by decomposing them into simpler subgoals. It supports flexibility and adaptability, as the system can backtrack and explore alternative plans when faced with obstacles or changes in the environment.
+
+### 3. Explain planning problem. [3]
+
+A planning problem in the context of artificial intelligence refers to a task of generating a sequence of actions or a plan to achieve a set of goals within a given environment. It involves defining the initial state of the system, specifying the desired goal state, and determining the actions that can be performed to transition between states. The objective is to find a solution, which is a sequence of actions that, when executed, transforms the initial state into a state that satisfies the specified goals.
+
+Key components of a planning problem include:
+
+1. **Initial State:**
+   - **Definition:** The initial state describes the starting condition of the system or environment. It includes the values and properties of relevant variables or features.
+   - **Example:** In a robot navigation problem, the initial state could be the robot's starting position and the environmental conditions.
+
+2. **Goal State:**
+   - **Definition:** The goal state defines the desired condition or configuration that the system should achieve. It specifies the values and properties that certain variables or features should have in the final state.
+   - **Example:** In the same robot navigation problem, the goal state could be a specific destination where the robot needs to reach.
+
+3. **Actions:**
+   - **Definition:** Actions represent the possible operations or steps that can be taken to change the state of the system. Each action has preconditions that must be satisfied for it to be applicable and effects that describe the changes it brings about.
+   - **Example:** In the robot navigation problem, actions could include moving the robot to a new location, turning, or avoiding obstacles.
+
+4. **State Transitions:**
+   - **Definition:** State transitions describe how the execution of an action results in a change from one state to another. A state transition model defines the effects of each action on the system's state.
+   - **Example:** Executing the "Move" action in the robot navigation problem might result in the robot's position changing to a new location.
+
+5. **Constraints:**
+   - **Definition:** Constraints are conditions or limitations that must be adhered to during the planning process. These could include resource constraints, temporal constraints, or other restrictions on the application of certain actions.
+   - **Example:** In a manufacturing planning problem, constraints could limit the availability of certain materials or the time duration for completing a task.
+
+6. **Objective Function (Optional):**
+   - **Definition:** In some planning problems, there may be an objective function that quantifies the desirability of different plans. This function is optimized to find the most efficient or cost-effective plan.
+   - **Example:** Minimizing the total cost or time required to achieve the goals could be an objective function in certain planning scenarios.
+
+Example of a Planning Problem:
+
+**Scenario:** Robot Assembly
+
+**Initial State:**
+
+- Robot parts scattered on a table.
+- Robot assembly instructions.
+
+**Goal State:**
+
+- Fully assembled robot.
+- No leftover parts on the table.
+
+**Actions:**
+
+1. **Pick Part(X):** Pick up a specific robot part X from the table.
+2. **Assemble(X, Y):** Assemble two parts X and Y together.
+3. **Place(Assembled Part):** Place the assembled part in the final robot structure.
+
+**Constraints:**
+
+- Each part must be picked before assembly.
+- Only compatible parts can be assembled.
+
+**Objective Function:**
+
+- Minimize the number of actions or time required to assemble the robot.
+
+In this example, the planning problem involves determining the sequence of actions (picking, assembling, placing) to transform the initial state (scattered parts) into the goal state (fully assembled robot). The actions must adhere to constraints, and the objective is to minimize the effort or time required for assembly.
+
+Solving a planning problem typically involves using algorithms and techniques from the field of AI, such as classical planning algorithms or more advanced approaches like heuristic search or reinforcement learning, depending on the complexity of the problem.
+
+### 4. Explain how planning is different from search procedure? [3]
+
+Planning and search procedures are related concepts in artificial intelligence, both involving the exploration of a problem space to find a solution. However, they differ in their goals, representations, and the nature of the problems they address. Let's explore the key differences between planning and search procedures:
+
+1. **Goal:**
+   - **Planning:**
+     - **Goal:** The primary goal of planning is to generate a sequence of actions or a plan that transforms an initial state into a goal state, satisfying a set of specified objectives.
+     - **Focus:** Planning focuses on the generation of a structured set of actions that achieve a predefined goal.
+
+   - **Search Procedure:**
+     - **Goal:** The goal of a search procedure is to find a specific state or configuration that satisfies certain conditions or criteria.
+     - **Focus:** Search procedures focus on exploring the state space to locate a particular state rather than generating a sequence of actions.
+
+2. **Representation:**
+   - **Planning:**
+     - **Representation:** Planning involves the representation of the initial state, goal state, actions, and their relationships. It often uses a domain-specific language to express the knowledge about the problem.
+     - **State Space:** The state space in planning represents different possible states the system can be in, and the planning algorithm explores this space to find a path from the initial state to the goal state.
+
+   - **Search Procedure:**
+     - **Representation:** Search procedures involve the representation of states, actions, and transitions. The problem is usually represented as a search graph or tree, where nodes correspond to states, and edges represent possible transitions.
+     - **State Space:** The state space in search procedures is the set of all possible states, and the search algorithm navigates through this space to find a specific state that satisfies the criteria.
+
+3. **Problem Definition:**
+   - **Planning:**
+     - **Problem:** Planning is often used to solve complex problems where a sequence of actions must be carefully chosen to achieve a goal. It is particularly useful in domains with dynamic and changing environments.
+     - **Example:** Robot navigation, scheduling, and task planning.
+
+   - **Search Procedure:**
+     - **Problem:** Search procedures are more general and can be applied to various problems, including those where the goal is to find a specific state or configuration without necessarily considering a sequence of actions.
+     - **Example:** Pathfinding in a maze, puzzle solving, and constraint satisfaction problems.
+
+4. **Solution:**
+   - **Planning:**
+     - **Solution:** The solution to a planning problem is a plan—a sequence of actions that, when executed, leads from the initial state to the goal state.
+     - **Evaluation:** Plans are evaluated based on their feasibility, optimality, and ability to achieve the specified objectives.
+
+   - **Search Procedure:**
+     - **Solution:** The solution to a search problem is a specific state that satisfies the defined criteria or conditions.
+     - **Evaluation:** Solutions are evaluated based on their ability to meet the specified criteria, such as finding the shortest path or satisfying certain constraints.
+
+5. **Complexity:**
+   - **Planning:**
+     - **Complexity:** Planning problems can be computationally expensive, especially in domains with a large state space or complex action dependencies.
+     - **Approaches:** Classical planning algorithms, heuristic search, and modern approaches like reinforcement learning are used to tackle planning problems.
+
+   - **Search Procedure:**
+     - **Complexity:** Search procedures can be computationally efficient, especially when the goal is to find a specific state in a well-defined state space.
+     - **Approaches:** Algorithms like breadth-first search, depth-first search, A* search, and other search strategies are commonly used.
+
+In summary, while both planning and search procedures involve the exploration of a problem space, planning is specifically concerned with generating a sequence of actions to achieve a goal, whereas search procedures focus on finding a specific state that satisfies given criteria. The choice between planning and search depends on the nature of the problem and the desired outcome.
+
+## UNIT-6
+
+### 1. Explain the MiniMax search procedure for Game Playing. Also explain alpha and Beta cut-offs to improve the performance of MinMax procedure. [7]
+
+**MiniMax Algorithm for Game Playing:**
+
+The MiniMax algorithm is a decision-making algorithm used in two-player, zero-sum games, such as chess, checkers, or tic-tac-toe. It is designed to find the optimal strategy for a player to maximize their chances of winning or minimize their chances of losing. The algorithm explores the game tree by considering all possible moves and their consequences.
+
+The key idea behind MiniMax is to assume that the opponent plays optimally, alternating between maximizing and minimizing players. The maximizing player aims to maximize the score (positive for a win, negative for a loss), while the minimizing player aims to minimize the score.
+
+Here is a simplified outline of the MiniMax algorithm:
+
+1. **Recursively explore the game tree:**
+   - The algorithm explores the tree of possible moves and outcomes by alternating between maximizing and minimizing players.
+   - At each level, the player chooses the move that leads to the highest (for the maximizing player) or lowest (for the minimizing player) evaluation score.
+
+2. **Assign scores to terminal states:**
+   - When the algorithm reaches terminal states (game over), it assigns scores to those states based on the outcome of the game (win, lose, or draw).
+
+3. **Backtrack scores to root:**
+   - The scores are then propagated back up the tree to the root, taking into account the alternating roles of maximizing and minimizing players.
+
+4. **Choose the best move:**
+   - Finally, the root node's children represent the possible moves, and the algorithm chooses the move with the highest score for the maximizing player or the lowest score for the minimizing player.
+
+**Alpha-Beta Pruning:**
+
+Alpha-Beta Pruning is an optimization technique applied to the MiniMax algorithm to reduce the number of nodes evaluated in the game tree. It involves two parameters, alpha and beta, which represent the minimum score that the maximizing player is assured of and the maximum score that the minimizing player is assured of, respectively.
+
+The basic idea is to prune branches of the tree that cannot possibly influence the final decision. The algorithm maintains alpha (for the maximizing player) and beta (for the minimizing player) values during the tree traversal and prunes branches where the current best move is already known.
+
+**Pseudocode for Alpha-Beta Pruning:**
+
+```plaintext
+function minimax(node, depth, maximizingPlayer, alpha, beta):
+    if depth is 0 or node is a terminal node:
+        return the heuristic value of node
+
+    if maximizingPlayer:
+        maxEval = -infinity
+        for each child in node:
+            eval = minimax(child, depth - 1, false, alpha, beta)
+            maxEval = max(maxEval, eval)
+            alpha = max(alpha, eval)
+            if beta <= alpha:
+                break  // Beta cut-off
+        return maxEval
+
+    else:  // minimizingPlayer
+        minEval = +infinity
+        for each child in node:
+            eval = minimax(child, depth - 1, true, alpha, beta)
+            minEval = min(minEval, eval)
+            beta = min(beta, eval)
+            if beta <= alpha:
+                break  // Alpha cut-off
+        return minEval
+```
+
+In the pseudocode:
+
+- `maximizingPlayer` is a boolean flag indicating whether the current node represents a maximizing or minimizing player.
+- `alpha` and `beta` are updated during the traversal to prune branches.
+
+Alpha-Beta Pruning significantly improves the efficiency of the MiniMax algorithm by avoiding the evaluation of nodes that cannot affect the final decision. It reduces the search space and allows the algorithm to make decisions more quickly.
+
+### 2. Describe in brief how Min-Max search procedure works. [4]
+
+The Min-Max search procedure is a decision-making algorithm commonly used in two-player, zero-sum games. The objective is to determine the optimal strategy for a player to maximize their chances of winning or minimize their chances of losing. This algorithm explores the game tree by considering all possible moves and their consequences, assuming that both players play optimally.
+
+Here's a brief overview of how the Min-Max search procedure works:
+
+1. **Game Tree Representation:**
+   - The game tree represents all possible moves and outcomes of a game. Nodes in the tree represent different game states, and edges represent possible moves.
+
+2. **Alternate Max and Min Levels:**
+   - The algorithm alternates between two types of levels in the tree:
+     - **Max Levels:** Represent the moves of the player seeking to maximize their outcome (Maximizing Player).
+     - **Min Levels:** Represent the moves of the opponent seeking to minimize the outcome for the maximizing player (Minimizing Player).
+
+3. **Evaluation Function:**
+   - For terminal states (game over), an evaluation function assigns a score based on the outcome of the game (win, lose, or draw).
+
+4. **Recursive Exploration:**
+   - The algorithm recursively explores the game tree, starting from the current state.
+   - At each level, it considers all possible moves and evaluates the resulting states using the evaluation function.
+
+5. **Maximizing Player's Turn (Max Level):**
+   - The maximizing player selects the move that leads to the highest evaluated score.
+   - The score represents the utility or desirability of the state from the maximizing player's perspective.
+
+6. **Minimizing Player's Turn (Min Level):**
+   - The minimizing player, assuming optimal play, selects the move that leads to the lowest evaluated score.
+   - This alternation continues until the algorithm reaches terminal states or a specified depth in the tree.
+
+7. **Backtracking:**
+   - The scores are propagated back up the tree to the root, considering the alternating roles of maximizing and minimizing players.
+   - At each level, the algorithm selects the move that corresponds to the optimal strategy for the current player.
+
+8. **Best Move Determination:**
+   - Once the root level is reached, the algorithm chooses the move that leads to the highest score for the maximizing player, or the lowest score for the minimizing player.
+   - This chosen move represents the best move based on the assumed optimal play by both players.
+
+The Min-Max search procedure explores the entire game tree in a depth-first manner, evaluating each possible move and determining the best course of action for the maximizing player, given the assumption of optimal play by both players. The time complexity of Min-Max is exponential in the depth of the game tree, but optimizations like alpha-beta pruning are often employed to reduce the number of nodes evaluated.
+
+### 3. Explain MiniMax search procedure. [4]
+
+The MiniMax search procedure is a decision-making algorithm used in two-player, zero-sum games, where the goal is to find the optimal strategy for a player to maximize their chances of winning or minimize their chances of losing. It's commonly employed in games like chess, checkers, tic-tac-toe, and others. The name "MiniMax" reflects the algorithm's approach of minimizing the maximum potential loss.
+
+The MiniMax algorithm assumes that both players play optimally, and it explores the game tree to find the best move for a player, given the opponent's optimal responses. The algorithm alternates between two players: the maximizing player (MAX) and the minimizing player (MIN). Here's an overview of how the MiniMax search procedure works:
+
+1. **Game Tree Representation:**
+   - The game tree represents all possible moves and outcomes of the game. Nodes in the tree represent different game states, and edges represent possible moves.
+
+2. **Maximizing and Minimizing Levels:**
+   - The algorithm alternates between two types of levels in the tree:
+     - **Max Levels (MAX):** Represent the moves of the player seeking to maximize their outcome.
+     - **Min Levels (MIN):** Represent the moves of the opponent seeking to minimize the outcome for the maximizing player.
+
+3. **Evaluation Function:**
+   - For terminal states (game over), an evaluation function assigns a score based on the outcome of the game (win, lose, or draw).
+
+4. **Recursive Exploration:**
+   - The algorithm recursively explores the game tree, starting from the current state.
+   - At each level, it considers all possible moves and evaluates the resulting states using the evaluation function.
+
+5. **Maximizing Player's Turn (MAX Level):**
+   - The maximizing player selects the move that leads to the highest evaluated score.
+   - The score represents the utility or desirability of the state from the maximizing player's perspective.
+
+6. **Minimizing Player's Turn (MIN Level):**
+   - The minimizing player, assuming optimal play, selects the move that leads to the lowest evaluated score.
+   - This alternation continues until the algorithm reaches terminal states or a specified depth in the tree.
+
+7. **Backtracking:**
+   - The scores are propagated back up the tree to the root, considering the alternating roles of maximizing and minimizing players.
+   - At each level, the algorithm selects the move that corresponds to the optimal strategy for the current player.
+
+8. **Best Move Determination:**
+   - Once the root level is reached, the algorithm chooses the move that leads to the highest score for the maximizing player.
+   - This chosen move represents the best move based on the assumed optimal play by both players.
+
+The MiniMax search procedure explores the entire game tree in a depth-first manner, evaluating each possible move and determining the best course of action for the maximizing player, given the assumption of optimal play by both players. The time complexity of MiniMax is exponential in the depth of the game tree, but optimizations like alpha-beta pruning are often employed to reduce the number of nodes evaluated.
+
+### 4. Show the use of Alpha-Beta pruning. [4]
+
+Alpha-Beta pruning is an optimization technique used in the MiniMax algorithm to reduce the number of nodes evaluated in the game tree. It involves maintaining two values, alpha and beta, which represent the minimum score that the maximizing player is assured of (alpha) and the maximum score that the minimizing player is assured of (beta). These values are updated during the tree traversal to prune branches that cannot affect the final decision. Here's an example of how Alpha-Beta pruning works:
+
+Let's consider a simplified game tree for illustration:
+
+```plaintext
+                   A (MAX)
+                  / \
+            B (MIN)   C (MIN)
+           /  \       /  \
+      D (MAX) E (MAX) F (MAX)
+```
+
+In this tree, A is the root node representing the maximizing player (MAX). B and C are its children representing the minimizing players (MIN), and D, E, and F are their respective children representing the maximizing players (MAX).
+
+Assume that the evaluation function assigns scores as follows:
+
+- A: 3
+- B: 2
+- C: 4
+- D: 1
+- E: 6
+- F: 8
+
+Now, let's perform the Alpha-Beta pruning:
+
+1. Start at the root node A (MAX) with alpha = -∞ and beta = +∞.
+2. Evaluate B and C.
+   - B (MIN): Evaluate D and E.
+     - D (MAX): Evaluate 1.
+     - E (MAX): Evaluate 6. Update alpha to 6 because MAX wants to maximize its score.
+     - Prune D because E's score (6) is greater than or equal to alpha (6).
+   - C (MIN): Evaluate F.
+     - F (MAX): Evaluate 8. Update alpha to 8.
+   - Prune C because F's score (8) is greater than or equal to alpha (8).
+3. Choose the maximum of B and C as the root's score. The final score for the root A is 6.
+
+By pruning the branches that cannot affect the final decision, we reduce the number of nodes evaluated. This is especially beneficial in deep game trees, significantly improving the efficiency of the MiniMax algorithm.
+
+The pseudocode for the Alpha-Beta pruning is provided in a previous response. It involves updating alpha and beta values during the tree traversal and pruning branches when certain conditions are met.
+
+## UNIT-5
+
+### 1. Explain Probability and Bay’s Theorem. [3]
+
+**Probability:**
+
+Probability is a measure of the likelihood or chance of an event occurring. It is a numerical value between 0 and 1, where 0 indicates that the event will not occur, and 1 indicates that the event will occur. Probability theory is a branch of mathematics that provides a framework for reasoning about uncertainty and randomness.
+
+The probability of an event A is denoted by P(A) and is calculated as the ratio of the number of favorable outcomes to the total number of possible outcomes:
+
+$$P(A) = \frac{\text{Number of Favorable Outcomes}}{\text{Total Number of Possible Outcomes}}$$
+
+Key concepts in probability theory include:
+
+1. **Sample Space (S):** The set of all possible outcomes of an experiment.
+
+2. **Event (A):** A subset of the sample space corresponding to a specific outcome or a collection of outcomes.
+
+3. **Probability Distribution:** A function that assigns probabilities to each possible outcome in the sample space.
+
+4. **Probability Rules:**
+
+   $$(0 \leq P(A) \leq 1)$$
+   $$(P(\text{Sample Space}) = 1)$$
+   $$(P(\text{Empty Set}) = 0)$$
+   $$(P(A \cup B) = P(A) + P(B) - P(A \cap B)) (for events A and B)$$
+
+**Bayes' Theorem:**
+
+Bayes' Theorem is a fundamental concept in probability theory that provides a way to update the probability of a hypothesis based on new evidence. It is named after the Reverend Thomas Bayes, who introduced the theorem. Bayes' Theorem is expressed as follows:
+
+$$P(A | B) = \frac{P(B | A) \cdot P(A)}{P(B)}$$
+
+Where:
+
+- \( P(A | B) \) is the probability of event A occurring given that event B has occurred (posterior probability).
+- \( P(B | A) \) is the probability of event B occurring given that event A has occurred.
+- \( P(A) \) is the prior probability of event A.
+- \( P(B) \) is the prior probability of event B.
+
+The formula allows us to update our beliefs about the probability of an event A based on new evidence B. The numerator represents the joint probability of A and B, and the denominator is a normalization factor to ensure that the posterior probabilities sum to 1.
+
+Bayes' Theorem is widely used in various fields, including statistics, machine learning, and artificial intelligence. It forms the basis for Bayesian inference, a powerful framework for updating and revising probabilities based on new information.
+
+### 2. What is certainty factor? [3]
+
+Certainty Factor is a concept used in artificial intelligence, specifically in the context of expert systems and rule-based reasoning. It is a numerical measure that represents the degree of belief or confidence in the truth of a given proposition or conclusion. Certainty factors are often used to handle uncertainty and imprecision in knowledge representation.
+
+In a rule-based system, rules are defined with conditions (antecedents) and corresponding conclusions (consequents). Each rule contributes a certainty factor to the truth value of its conclusion based on the satisfaction of its conditions. The certainty factor ranges between -1 and +1, where:
+
+- **+1 indicates complete certainty or belief in the truth of the conclusion.**
+- **0 indicates complete uncertainty or lack of belief (50-50 chance).**
+- **-1 indicates complete certainty in the falsity of the conclusion.**
+
+The certainty factor of a conclusion is influenced by multiple rules that may support or conflict with it. The aggregation of certainty factors from multiple rules is often done using a combination rule (e.g., Dempster-Shafer rule, weighted sum, etc.).
+
+The Certainty Factor (CF) can be calculated using the following formula:
+
+$$CF(A) = \frac{P(A) - P(\neg A)}{P(A) + P(\neg A)}$$
+
+Where:
+
+- \( CF(A) \) is the Certainty Factor for proposition A.
+- \( P(A) \) is the probability of A.
+- \( P(\neg A) \) is the probability of the negation of A.
+
+In practice, Certainty Factors are used in diagnostic and decision-making systems to handle situations where knowledge is uncertain, incomplete, or contradictory. By combining rules with certainty factors, the system can make more nuanced and context-aware decisions, taking into account the varying degrees of confidence associated with different pieces of information.
+
+### 3. Discuss Bayesian network and its application. [4]
+
+**Bayesian Network:**
+
+A Bayesian Network (BN), also known as a Bayesian Belief Network or a Probabilistic Graphical Model, is a graphical representation of probabilistic relationships among a set of variables. It consists of nodes representing variables and directed edges representing probabilistic dependencies between the variables. Bayesian Networks are particularly useful for modeling and reasoning under uncertainty.
+
+Key components of a Bayesian Network:
+
+1. **Nodes (Vertices):** Represent variables, which can be discrete or continuous. Each node represents a random variable and is associated with a probability distribution conditioned on its parents.
+
+2. **Directed Edges (Arcs):** Represent direct probabilistic dependencies between variables. An arrow from node A to node B indicates that B depends on A.
+
+3. **Conditional Probability Tables (CPTs):** Each node has an associated CPT that specifies the probability distribution of the node given its parents. CPTs capture the conditional dependencies among variables.
+
+4. **Bayesian Network Structure:** The structure of the network reflects the conditional independence relationships among variables, given their parents. It can be represented by a directed acyclic graph (DAG).
+
+**Applications of Bayesian Networks:**
+
+1. **Medical Diagnosis:**
+   - Bayesian Networks are widely used in medical diagnosis to model the probabilistic relationships among symptoms, diseases, and test results.
+   - Given observed symptoms, the network can infer the most likely underlying diseases and their probabilities.
+
+2. **Risk Assessment:**
+   - In risk assessment and management, Bayesian Networks are employed to model dependencies among risk factors and assess the likelihood and impact of different risks.
+   - It helps in making informed decisions by considering uncertainties and interdependencies.
+
+3. **Finance and Business:**
+   - Bayesian Networks are used in finance for risk analysis, portfolio optimization, and predicting financial market trends.
+   - In business, they can model dependencies among various factors influencing business outcomes, helping in decision-making.
+
+4. **Speech Recognition:**
+   - Bayesian Networks are applied in speech recognition systems to model the probabilistic relationships among phonemes, words, and contextual information.
+   - They enhance the accuracy of speech recognition by capturing the uncertainty in the spoken language.
+
+5. **Environmental Modeling:**
+   - Bayesian Networks are employed in environmental modeling to assess the impact of different factors on environmental conditions.
+   - They help in understanding complex ecosystems and making decisions for environmental management.
+
+6. **Fault Diagnosis and Reliability Analysis:**
+   - In engineering and manufacturing, Bayesian Networks are used for fault diagnosis and reliability analysis of systems.
+   - They model dependencies among components and identify the most likely causes of failures.
+
+7. **Legal Reasoning:**
+   - In legal applications, Bayesian Networks can model the relationships among evidence, arguments, and legal outcomes.
+   - They assist in legal reasoning and decision-making, considering uncertainties in legal cases.
+
+The strength of Bayesian Networks lies in their ability to model and reason about uncertainty and dependencies in complex systems. They provide a principled and graphical approach for representing and updating beliefs based on evidence, making them versatile tools in various fields.
+
+### 4. Write about various defuzzification methods. [7]
+
+Defuzzification is a crucial step in fuzzy logic systems where the output is a fuzzy set, and it needs to be converted into a crisp, actionable value. Defuzzification methods aim to extract a single, deterministic value from the fuzzy set to make decisions or control systems based on fuzzy logic. Here are several common defuzzification methods:
+
+1. **Centroid Method:**
+   - The centroid method calculates the center of gravity, or centroid, of the fuzzy set. It is the weighted average of all the fuzzy set's membership values, considering their positions along the universe of discourse.
+   - Mathematically, the centroid (\(C\)) is calculated as: $$C = \frac{\int x \cdot \mu(x) \, dx}{\int \mu(x) \, dx}$$
+   - It provides a crisp value that represents the center of mass of the fuzzy set.
+
+2. **Weighted Average Method:**
+   - In the weighted average method, each fuzzy set value is multiplied by its membership degree, and the sum of these products is divided by the sum of the membership degrees.
+   - Mathematically, the weighted average (\(W\)) is calculated as: $$W = \frac{\sum (x \cdot \mu(x))}{\sum \mu(x)}$$
+   - It provides a crisp value that reflects the weighted average of the fuzzy set.
+
+3. **Max-Value Method (Height Method):**
+   - The max-value method selects the value where the membership function has its maximum value. It represents the most significant contribution to the fuzzy set.
+   - Mathematically, $$W = \arg \max_x \{\mu(x)\}$$.
+   - It is a simple method, but it might not capture the overall distribution of the fuzzy set.
+
+4. **Bisector Method:**
+   - The bisector method calculates the point where the area under the left and right portions of the membership function are equal.
+   - Mathematically, $$W = \arg \min_x \left| \int_{-\infty}^{x} \mu(x) \, dx - \int_{x}^{\infty} \mu(x) \, dx \right|$$.
+   - It provides a balanced defuzzification value based on the equal area on both sides of the fuzzy set.
+
+5. **Smallest of Maxima (SOM) Method:**
+   - The SOM method selects the output value corresponding to the smallest maximum membership value of the fuzzy set.
+   - Mathematically, $$W = \min \{x | \mu(x) = \max \mu(x)\}$$.
+   - It considers the conservative approach of choosing the smallest output value that still captures the significant membership.
+
+6. **Largest of Maxima (LOM) Method:**
+   - The LOM method selects the output value corresponding to the largest maximum membership value of the fuzzy set.
+   - Mathematically, $$W = \max \{x | \mu(x) = \max \mu(x)\}$$.
+   - It considers the aggressive approach of choosing the largest output value associated with the maximum membership.
+
+7. **Mean of Maxima (MOM) Method:**
+   - The MOM method calculates the mean of all output values corresponding to the maximum membership values of the fuzzy set.
+   - Mathematically, $$W = \frac{\sum \{x | \mu(x) = \max \mu(x)\}}{\text{Number of elements in the set}}$$.
+   - It provides a compromise between the conservative and aggressive approaches.
+
+These defuzzification methods are applied based on the requirements of the specific application and the desired characteristics of the resulting crisp output. The choice of defuzzification method affects the performance and interpretability of a fuzzy logic system.
+
+### 5. A bag I contains 4 white and 6 black balls while another Bag II contains 4 white and 3 black balls. One ball is drawn at random from one of the bags, and it is found to be black. Find the probability that it was drawn from Bag I. [4]
+
+Let's denote the events as follows:
+
+- Event A: The ball is drawn from Bag I.
+- Event B: The ball drawn is black.
+
+We are asked to find the conditional probability \( P(A|B) \), which is the probability that the ball was drawn from Bag I given that it is black. According to Bayes' Theorem:
+
+$$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$$
+
+Now, let's break down the components:
+
+1. \( P(B|A) \): The probability of drawing a black ball given that it was drawn from Bag I. Bag I contains 6 black balls out of a total of 10 balls.
+
+   $$P(B|A) = \frac{\text{Number of black balls in Bag I}}{\text{Total number of balls in Bag I}} = \frac{6}{10} = \frac{3}{5}$$
+
+2. \( P(A) \): The probability of drawing from Bag I without any additional information. Since there are two bags and the selection is random:
+
+   $$P(A) = \frac{\text{Number of balls in Bag I}}{\text{Total number of balls in both bags}} = \frac{10}{10 + 7} = \frac{10}{17}$$
+
+3. \( P(B) \): The probability of drawing a black ball, which can happen by either drawing from Bag I or Bag II. We use the law of total probability:
+
+   $$P(B) = P(B|A) \cdot P(A) + P(B|\neg A) \cdot P(\neg A)$$
+
+   Since drawing from Bag I and Bag II are equally likely:
+
+   $$P(B) = \frac{3}{5} \cdot \frac{10}{17} + \frac{3}{7} \cdot \frac{7}{17} = \frac{3}{17} + \frac{3}{17} = \frac{6}{17}$$
+
+Now, substitute these values into Bayes' Theorem:
+
+$$P(A|B) = \frac{\frac{3}{5} \cdot \frac{10}{17}}{\frac{6}{17}} = \frac{3}{5}$$
+
+Therefore, the probability that the ball was drawn from Bag I, given that it is black, is \( \frac{3}{5} \).
+
+## UNIT-4
+
+### 1. Write a short note on non monotonic reasoning. [4]
+
+**Non-Monotonic Reasoning:**
+
+Non-monotonic reasoning is a type of logical reasoning that departs from classical or monotonic logic, where new information can only strengthen existing conclusions. In classical logic, once a statement is proven, it remains true, and adding more premises doesn't change the truth value.
+
+Non-monotonic reasoning, on the other hand, acknowledges that conclusions may need to be revised or retracted in the light of new information. It is particularly relevant in situations where knowledge is incomplete, uncertain, or subject to change. In non-monotonic reasoning, the truth value of a proposition is not guaranteed to persist in the face of additional information.
+
+**Key Characteristics of Non-Monotonic Reasoning:**
+
+1. **Closed-World Assumption:**
+   - In non-monotonic reasoning, it is assumed that the knowledge about the world is not exhaustive. Therefore, if a statement is not known to be true, it is assumed to be false. This is often referred to as the "closed-world assumption."
+
+2. **Default Reasoning:**
+   - Default reasoning is a common approach in non-monotonic reasoning where default rules or assumptions are used to draw conclusions unless overridden by additional information. These defaults are accepted unless there is evidence to the contrary.
+
+3. **Relevance:**
+   - Non-monotonic systems often prioritize relevance. The acceptance of a conclusion is influenced not only by the available evidence but also by its relevance to the context or problem at hand.
+
+4. **Circumscription:**
+   - Circumscription is a specific formalism within non-monotonic logic introduced by John McCarthy. It involves minimizing the extension of predicates to make the theory as conservative as possible in light of new information.
+
+5. **Commonsense Reasoning:**
+   - Non-monotonic reasoning is often applied in commonsense reasoning scenarios where there is a need to make plausible inferences based on incomplete and uncertain information.
+
+**Applications of Non-Monotonic Reasoning:**
+
+1. **Expert Systems:**
+   - In expert systems, where reasoning is based on knowledge provided by experts, non-monotonic reasoning helps handle incomplete or uncertain information.
+
+2. **Legal Reasoning:**
+   - In legal reasoning, where laws and regulations may have exceptions, non-monotonic reasoning is useful for drawing conclusions that are subject to modification based on additional legal considerations.
+
+3. **Default Logic in AI Planning:**
+   - Default logic, a form of non-monotonic logic, has been applied in AI planning to handle incomplete information and make default assumptions about actions unless evidence suggests otherwise.
+
+4. **Knowledge Representation:**
+   - Non-monotonic reasoning is employed in knowledge representation to model and reason about incomplete or evolving knowledge in intelligent systems.
+
+5. **Semantic Web and Ontologies:**
+   - In the development of ontologies for the Semantic Web, non-monotonic reasoning is used to represent and reason about uncertain or evolving knowledge.
+
+Non-monotonic reasoning provides a more flexible and adaptive framework for dealing with uncertainty and incomplete information, making it an essential tool in various areas of artificial intelligence and knowledge representation.
+
+### 2. What is nonmonotonic reasoning? Explain logics for nonmonotonic reasoning. [7]
+
+**Nonmonotonic Reasoning:**
+
+Nonmonotonic reasoning is a form of logical reasoning that allows for the revision or withdrawal of previously drawn conclusions in the light of new information. In classical or monotonic logic, once a conclusion is deduced from a set of premises, adding more information does not alter the truth of that conclusion. However, nonmonotonic reasoning recognizes that conclusions may need to be revised or retracted as new information becomes available.
+
+This type of reasoning is particularly relevant in situations where knowledge is incomplete, uncertain, or evolving. In everyday reasoning, people often make tentative conclusions that they are willing to revise based on additional evidence or exceptions.
+
+**Logics for Nonmonotonic Reasoning:**
+
+Several formal systems and logics have been developed to model nonmonotonic reasoning. Some of the prominent ones include:
+
+1. **Default Logic:**
+   - Introduced by Raymond Reiter, Default Logic provides a way to formalize nonmonotonic reasoning using default rules. Default rules represent typical assumptions that are adopted unless overridden by explicit information. The theory allows for the retraction of conclusions when new information conflicts with default assumptions.
+
+2. **Autoepistemic Logic:**
+   - Autoepistemic logic, proposed by John McCarthy, is a formal system designed for reasoning about knowledge and belief. It allows agents to reason about their own beliefs and provides a mechanism for handling incomplete information and possible changes in belief.
+
+3. **Circumscription:**
+   - Circumscription, introduced by John McCarthy, is a nonmonotonic logic used to minimize the extensions of predicates while preserving consistency with the available information. It is particularly suited for situations where a more conservative approach is desired, minimizing changes to existing beliefs.
+
+4. **Reiter's Closed-World Assumption:**
+   - In Reiter's Closed-World Assumption (CWA), a nonmonotonic logic is built on the assumption that if a statement is not known to be true, it is treated as false. This approach is particularly useful for situations where the information is incomplete, and default assumptions are made.
+
+5. **Answer Set Programming (ASP):**
+   - Answer Set Programming is a declarative programming paradigm based on nonmonotonic logic. It allows users to specify a set of rules, and the system finds consistent sets of logical consequences, called answer sets, under nonmonotonic semantics.
+
+6. **Probabilistic Logic:**
+   - Probabilistic logics, such as Bayesian logic, combine probability theory with logic to handle uncertainty and nonmonotonic reasoning. They allow for the representation of uncertain information and the revision of beliefs based on new evidence.
+
+These nonmonotonic logics provide formal frameworks to capture and reason about incomplete or evolving knowledge. They have applications in various areas of artificial intelligence, including expert systems, knowledge representation, legal reasoning, and commonsense reasoning. The choice of a specific nonmonotonic logic depends on the characteristics of the problem domain and the requirements of the reasoning task.
+
+## UNIT-3
+
+### 1. Explain the various method of knowledge representation with suitable example. [7]
+
+### 2. Explain Forward Reasoning and Backward Reasoning with example. [7]
+
+### 3. Write and explain algorithm for resolution in propositional logic with suitable example. [7]
+
+### 4. Differentiate procedural and declarative knowledge. [3]
+
+### 5. Consider the following facts: - Hemant only likes easy courses.- Science courses are hard.- All the courses in basketweaving department are easy. - BK301 is a basketweaving course. Use resolution to answer the question,”What course would Hemant like?” [7]
+
+### 6. Demonstrate briefly the steps to convert given wff into clause form [7]
+
+### 7. Consider the following sentences:  Rita likes all kinds of food.  Apples are food.  Anything anyone eats and isn’t killed by is food.  Rahi eats peanuts and is still alive.  Tanvi eats everything Rahi eats. i. Translate these sentences into formulas in predicate logic. ii. Use resolution to answer the question, “What food does Tanvi eat?” [7]
+
+### 8. Explain Semantic Net with example. [3]
+
+### 9. Define the following. 1. Modus Ponens 2. Horn Clause 3. Existential Quantifier [3]
+
+## UNIT-2
+
+### 1. Write an algorithm for the breadth first search. [3]
+
+### 2. Why hill climbing is better than generate and test? Write algorithm for simple hill climbing. [4]
+
+### 3. Explain the state space search with the use of 8 Puzzle Problem. [7]
+
+### 4. What is heuristic search? Discuss with an example. [3]
+
+### 5. Explain Problem Reduction using “AND-OR” graph. [4]
+
+### 6. What do you mean by constraint satisfaction problems? Explain constraint propagation algorithm using suitable example. [7]
+
+### 7.  What is a “control strategy” and what are its characteristics? [3]
+
+### 8. State Water Jug problem. Give its state space representation [7]
+
+### 9. Explain A* algorithm. What happens if h’ underestimates h and overestimates h? [7]
+
+### 10.Explain local maxima, plateau and ridge in brief. [3]
+
+### 11. Differentiate Informed & Uninformed search. Give examples. [3]
+
+### 12. Explain best first search algorithm. [4]
+
+### 13. Explain Water Jug problem with Sate Space Search method. [4]
+
+### 14. Explain Best First Search with suitable example [7]
+
+### 15. Explain Semantic Net with example [4]
+
+### 16. Explain limitations of Hill Climbing algorithm. [4]
+
+### 17. Compare DFS and BFS. [4]
+
+## UNIT-1
+
+### 1. Explain Turing test. [3]
+
+### 2. What is artificial intelligence? Explain application of AI. [7]
+
+### 3. Explain AI Problem characteristics in detail. [7]
+
+### 4. Define AI. What are the task domains of AI? [7]]
+
+### 5. Enlist and discuss major task domains of Artificial Intelligence. [7]
